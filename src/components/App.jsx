@@ -1,10 +1,10 @@
 import { Profile } from 'components/Profile/Profile';
 import { FriendList } from './FriendList/FriendList';
-// import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import user from 'FilesJson/user.json';
 import data from 'FilesJson/data.json';
 import friends from 'FilesJson/friends.json';
-// import transactions from 'FilesJson/transactions.json';
+import transactions from 'FilesJson/transactions.json';
 import { Statistics } from './Statistics/Statistics';
 
 export const App = () => {
@@ -30,7 +30,7 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
-      {/* <TransactionHistory items={transactions} /> */}
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
